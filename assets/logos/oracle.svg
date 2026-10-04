@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Oracle logo">
+  <rect width="128" height="128" rx="22" fill="#f8f9fb"/>
+  <path d="M50 94c-19.9 0-36-16.1-36-36s16.1-36 36-36h28c19.9 0 36 16.1 36 36s-16.1 36-36 36H50zm28-12c12.7 0 22-9.3 22-22s-9.3-22-22-22H50c-12.7 0-22 9.3-22 22s9.3 22 22 22h28z" fill="#c74634"/>
+  <path d="M46 92c-15.5 0-28-12.5-28-28s12.5-28 28-28h36c15.5 0 28 12.5 28 28s-12.5 28-28 28H46zm36-10c11.3 0 20-8.7 20-20s-8.7-20-20-20H46c-11.3 0-20 8.7-20 20s8.7 20 20 20h36z" fill="none" stroke="#f8f9fb" stroke-width="6" opacity="0.95"/>
+</svg>

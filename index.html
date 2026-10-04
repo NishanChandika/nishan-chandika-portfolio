@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishan Chandika | System Support Engineer & ServiceNow Administrator</title>
+<meta name="description" content="Nishan Chandika is a System Support Engineer and ServiceNow Certified System Administrator who builds workflows, service catalogs and stable IT operations.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+document.documentElement.classList.add('js');
+try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}
+</script>
+<style>
+:root{--bg:#f5f6f2;--surface:#fff;--ink:#16201c;--muted:#5b6762;--line:#d9ddd5;--accent:#2347e6;--accent-ink:#fff;--ok:#1c8a5a;--warn:#c27a00;--shadow:0 1px 0 rgba(22,32,28,.04),0 18px 40px -24px rgba(22,32,28,.35)}
+:root[data-theme="dark"]{--bg:#0d1220;--surface:#151b2e;--ink:#e8ecf7;--muted:#98a3bd;--line:#26304a;--accent:#8fa8ff;--accent-ink:#0d1220;--ok:#4cd39b;--warn:#f0b84a;--shadow:0 18px 40px -24px rgba(0,0,0,.7)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif;transition:background .3s,color .3s;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:84px 0 0}
+h2{font-size:clamp(30px,4.5vw,44px);font-weight:800;margin-bottom:12px}
+.lede{color:var(--muted);max-width:60ch;margin:0 0 40px}
+/* scroll reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.links{display:flex;gap:18px;align-items:center}
+.links a{text-decoration:none;font-size:15px;color:var(--muted);font-weight:500}
+.links a:hover{color:var(--ink)}
+#theme{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:18px;transition:transform .4s}
+#theme:hover{border-color:var(--accent);transform:rotate(25deg)}
+.sun{display:none}[data-theme="dark"] .sun{display:inline}[data-theme="dark"] .moon{display:none}
+
+/* hero */
+.hero{position:relative;isolation:isolate;padding-top:64px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero-backdrop{position:absolute;z-index:-1;top:12px;right:-20px;bottom:-20px;width:68%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;overflow:hidden;border-radius:32px;opacity:.32;filter:blur(10px);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.18) 15%,#000 48%,#000 86%,transparent 100%);pointer-events:none}
+.hero-backdrop img{display:block;width:100%;height:100%;min-height:0;object-fit:cover}
+.hero-backdrop img:nth-child(2){object-position:center 35%}
+.hero-backdrop img:nth-child(3){object-position:center 45%}
+:root[data-theme="dark"] .hero-backdrop{opacity:.22}
+.hero-content,.record{position:relative;z-index:1}
+.hero-content::before{content:"";position:absolute;z-index:-1;inset:-32px -18px -28px -32px;border-radius:40px;background:linear-gradient(135deg,color-mix(in srgb,var(--bg) 72%,transparent),color-mix(in srgb,var(--bg) 38%,transparent)),url("assets/hero/nishan-portrait.png") center 34%/cover;filter:blur(12px);opacity:.38;mask-image:radial-gradient(ellipse at 48% 48%,#000 28%,transparent 78%);pointer-events:none}
+:root[data-theme="dark"] .hero-content::before{opacity:.28}
+.hero h1{font-size:clamp(44px,7.4vw,84px);font-weight:800}
+.hero .role{font:600 21px "Bricolage Grotesque",sans-serif;color:var(--accent);margin:18px 0 14px;min-height:1.6em}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:3px;vertical-align:-3px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p{color:var(--muted);max-width:50ch;margin:0 0 20px}
+.learning{display:flex;gap:10px;align-items:flex-start;padding:12px 16px;border:1px dashed var(--accent);border-radius:12px;font-size:15px;max-width:52ch;margin-bottom:26px;background:color-mix(in srgb,var(--accent) 7%,transparent)}
+.learning b{font-weight:600}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--ink);transition:transform .15s}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-2px)}
+.record{background:color-mix(in srgb,var(--surface) 78%,transparent);backdrop-filter:blur(14px) saturate(130%);-webkit-backdrop-filter:blur(14px) saturate(130%);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;font-size:15px;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.rec-head{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--accent) 8%,var(--surface));font-weight:600}
+.rec-head span:last-child{color:var(--muted);font-weight:400;font-size:13px}
+.record dl{margin:0}
+.row{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:11px 18px;border-bottom:1px solid var(--line)}
+.row:last-child{border:0}
+dt{color:var(--muted)}dd{margin:0;font-weight:500}
+.state{display:inline-flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ok);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent)}70%,100%{box-shadow:0 0 0 10px transparent}}
+.hero-content{animation:rise .7s both}.record{animation:rise .7s .12s both,float 6s 1s ease-in-out infinite}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.stat{padding:22px;border-right:1px solid var(--line)}
+.stat:last-child{border:0}
+.stat b{display:block;font:800 34px "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.stat span{color:var(--muted);font-size:14px}
+
+/* tech marquee */
+.marquee{margin-top:48px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:14px;width:max-content;animation:scroll 42s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.tech{display:flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);white-space:nowrap;font-weight:500;font-size:15px}
+.tech img,.tech i{width:26px;height:26px;object-fit:contain}
+.mono{display:inline-grid;place-items:center;border-radius:8px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);font:700 14px "Bricolage Grotesque",sans-serif;font-style:normal}
+
+/* about */
+#about{position:relative;isolation:isolate;margin-top:24px;padding:96px 0 64px}
+#about::before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 18% 42%,rgba(84,145,93,.24),transparent 42%),radial-gradient(ellipse at 78% 62%,rgba(231,157,83,.18),transparent 38%),linear-gradient(135deg,color-mix(in srgb,var(--bg) 90%,transparent),color-mix(in srgb,var(--surface) 58%,transparent));filter:saturate(115%)}
+.about-glass{padding:clamp(24px,5vw,52px);border:1px solid color-mix(in srgb,var(--surface) 70%,var(--line));border-radius:28px;background:color-mix(in srgb,var(--surface) 68%,transparent);box-shadow:var(--shadow);backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%)}
+.about{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center}
+.photo{position:relative}
+.photo img{width:100%;border-radius:18px;display:block;box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover;object-position:top;transition:opacity .35s ease}
+.photo img.changing{opacity:.2}
+.photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--accent);border-radius:18px;z-index:-1;transition:inset .3s}
+.photo:hover::after{inset:8px -8px -8px 8px}
+.about p{margin:0;color:var(--ink);font-size:19px;line-height:1.7}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.group{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--surface)}
+.group.big{grid-column:1/-1;border-color:var(--accent)}
+.group h3{font-size:21px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{padding:5px 12px;border:1px solid var(--line);border-radius:99px;font-size:14px;transition:border-color .2s,background .2s,transform .2s}
+.networking .chips span{display:inline-flex;align-items:center;gap:7px}
+.skill-icon{width:16px;height:16px;flex:none;display:inline-grid;place-items:center;color:var(--accent)}
+.skill-icon svg{display:block;width:100%;height:100%}
+.chips span:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent);transform:translateY(-2px)}
+.js .chips span{opacity:0;transform:scale(.85)}
+.js .in .chips span{animation:pop .45s calc(var(--i)*35ms) both}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+
+/* timeline */
+.timeline{position:relative;margin-left:8px;padding-left:34px;border-left:2px solid var(--line)}
+.job{position:relative;padding-bottom:40px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-44px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.job.now::before{background:var(--accent);animation:pulse 2.2s infinite;color:var(--accent)}
+.jh{display:flex;gap:16px;align-items:center;margin:4px 0 10px}
+.lg,.jh .mono{width:52px;height:52px;border-radius:12px;flex:none}
+.lg{object-fit:contain;background:#fff;border:1px solid var(--line);padding:7px}
+.jh .mono{font-size:20px}
+.when{font-size:14px;color:var(--muted)}
+.job h3{font-size:24px}
+.org{color:var(--accent);font-weight:600}
+.job ul{margin:0;padding-left:20px;color:var(--muted)}
+.job li{margin-bottom:7px}
+.promo{margin:10px 0;padding:12px 16px;border-left:3px solid var(--warn);background:var(--surface);border-radius:0 10px 10px 0;font-size:15px}
+.promo b{font-weight:600}
+
+/* education */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--surface)}
+.card h3{font-size:22px;margin-bottom:6px}
+.sub{color:var(--muted);font-size:15px;margin:0}
+.uni{display:flex;flex-direction:column;gap:18px}
+.uni .sl{background:#fffcd9;border-radius:12px;padding:12px 16px;align-self:flex-start;max-width:100%}
+.uni .sl img{display:block;height:56px;width:auto;max-width:100%}
+.coursework{width:100%;border-top:1px solid var(--line);padding-top:14px}
+.coursework summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none}
+.coursework summary::-webkit-details-marker{display:none}
+.coursework summary::after{content:"+";color:var(--accent);font:600 22px/1 "IBM Plex Sans",sans-serif}
+.coursework[open] summary::after{content:"−"}
+.coursework h4{font:700 17px "Bricolage Grotesque",sans-serif;margin:0}
+.coursework .course-grid{margin-top:14px}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.course-group{padding:14px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--surface) 92%,var(--bg))}
+.course-group h5{font:600 15px/1.35 "IBM Plex Sans",system-ui,sans-serif;margin:0 0 5px}
+.course-group p{color:var(--muted);font-size:14px;line-height:1.5;margin:0}
+.badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:18px;margin-top:20px}
+.badge{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;text-decoration:none;font-size:13.5px;line-height:1.35;font-weight:500}
+.badge .bi{width:104px;height:104px;display:grid;place-items:center;transition:transform .35s}
+.badge:hover .bi{transform:translateY(-6px) rotate(-4deg) scale(1.06)}
+.badge img{width:100%;height:100%;object-fit:contain}
+.badge svg{width:100%;height:100%}
+.badge small{display:block;color:var(--muted);font-weight:400}
+.badge small.expired{color:var(--warn);font-weight:600}
+.progress{margin-top:22px;padding:16px;border:1px dashed var(--accent);border-radius:12px;font-size:15px}
+.bar{height:6px;border-radius:9px;background:var(--line);margin-top:12px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:9px;transition:width 1.6s .3s ease}
+.in .bar i{width:45%}
+.credly{display:inline-block;margin-top:18px;font-weight:600;color:var(--accent);text-decoration:none}
+.credly:hover{text-decoration:underline}
+
+/* projects */
+.project-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.project-grid.secondary{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:20px}
+.project-card{display:grid;grid-template-columns:.95fr 1.05fr;padding:0;overflow:hidden}
+.project-visual{position:relative;min-height:330px;background:#fff;overflow:hidden}
+.project-visual img{display:block;width:100%;height:100%;min-height:330px;object-fit:cover}
+.project-visual.art{display:grid;place-items:center;padding:24px}
+.project-visual.art.hamper{background:radial-gradient(ellipse at 30% 20%,#f8deb9,transparent 55%),linear-gradient(145deg,#f8f1e7,#e6cda9)}
+.project-visual.art.parking{background:radial-gradient(ellipse at 70% 18%,#d2e9e1,transparent 55%),linear-gradient(145deg,#e9f4f1,#bed9d0)}
+.project-visual.art svg{display:block;width:min(100%,390px);height:auto;filter:drop-shadow(0 16px 22px rgba(22,32,28,.14))}
+.project-grid.secondary .project-card{display:flex;flex-direction:column}
+.project-grid.secondary .project-visual,.project-grid.secondary .project-visual img{min-height:210px}
+.project-grid.secondary .project-copy{flex:1;display:flex;flex-direction:column;align-items:flex-start}
+.project-grid.secondary .project-tags{margin-top:auto;margin-bottom:20px}
+.project-visual span{position:absolute;left:16px;top:16px;padding:5px 10px;border-radius:99px;background:color-mix(in srgb,var(--surface) 88%,transparent);color:var(--ink);font-size:13px;font-weight:600;backdrop-filter:blur(8px)}
+.project-copy{padding:24px}
+.project-copy h3{font-size:24px;margin-bottom:8px}
+.project-copy p{color:var(--muted);margin:0 0 16px}
+.project-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.project-tags span{padding:4px 10px;border:1px solid var(--line);border-radius:99px;color:var(--muted);font-size:13px}
+
+/* publication */
+.pub{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;overflow:hidden}
+.pub .fig{position:relative;background:#fff;display:grid;place-items:center;padding:24px 24px 58px;border-right:1px solid var(--line);min-width:0}
+.pub .fig img{display:block;width:100%;height:340px;object-fit:contain;max-width:560px;transition:opacity .35s ease}
+.pub .fig img.changing{opacity:.15}
+.gallery-caption{position:absolute;left:24px;right:24px;bottom:16px;text-align:center;color:var(--muted);font-size:13px}
+.gallery-control{position:absolute;top:50%;z-index:1;width:40px;height:40px;transform:translateY(-50%);display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:color-mix(in srgb,var(--surface) 90%,transparent);color:var(--ink);font:600 22px/1 system-ui,sans-serif;cursor:pointer}
+.gallery-control:hover{border-color:var(--accent);color:var(--accent)}
+.gallery-control.prev{left:12px}
+.gallery-control.next{right:12px}
+.gallery-dots{position:absolute;bottom:19px;right:24px;display:flex;gap:6px}
+.gallery-dot{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:var(--line);cursor:pointer}
+.gallery-dot[aria-pressed="true"]{background:var(--accent);transform:scale(1.25)}
+.gallery-control:focus-visible,.gallery-dot:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.pub .txt{padding:30px}
+.venue{font-size:14px;color:var(--accent);font-weight:600;margin-bottom:8px}
+.meta{margin:18px 0 0;font-size:14.5px}
+.meta div{display:grid;grid-template-columns:116px 1fr;gap:10px;padding:7px 0;border-top:1px solid var(--line)}
+.meta dt{color:var(--muted)}.meta dd a{color:var(--accent)}
+
+/* contact */
+.contact{padding-bottom:84px}
+.cbox{background:var(--accent);color:var(--accent-ink);border-radius:20px;padding:clamp(28px,5vw,56px)}
+.cbox h2{margin-bottom:10px}
+.cbox p{margin:0 0 28px;max-width:52ch;opacity:.9}
+.clinks{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.clinks a{display:flex;align-items:center;gap:14px;padding:14px 18px;border:1.5px solid color-mix(in srgb,var(--accent-ink) 45%,transparent);border-radius:12px;text-decoration:none;font-weight:500;overflow-wrap:anywhere;transition:background .2s,transform .2s}
+.clinks a:hover{background:color-mix(in srgb,var(--accent-ink) 14%,transparent);transform:translateY(-3px)}
+.contact-icon{width:42px;height:42px;flex:none;display:grid;place-items:center;border-radius:12px;background:color-mix(in srgb,var(--accent-ink) 16%,transparent);color:var(--accent-ink)}
+.contact-icon svg{width:22px;height:22px;display:block}
+.contact-icon.wordmark{font:800 17px/1 "IBM Plex Sans",sans-serif;letter-spacing:-.05em}
+.contact-text{min-width:0}
+.clinks small{display:block;opacity:.75;font-weight:400;font-size:13px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
+
+@media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto}.js .rv,.js .chips span{opacity:1;transform:none}.track{flex-wrap:wrap;width:auto}.in .bar i,.bar i{width:45%}}
+@media(max-width:820px){
+ .hero,.about,.cols,.skills,.clinks,.project-grid,.project-grid.secondary,.project-card,.pub{grid-template-columns:1fr}
+ .hero-backdrop{top:12px;right:-12px;bottom:0;width:100%;grid-template-columns:repeat(3,minmax(0,1fr));opacity:.22;mask-image:linear-gradient(180deg,rgba(0,0,0,.12),#000 24%,transparent 96%)}
+ .about{gap:32px}.photo{max-width:300px;margin:0 14px 0 0}
+ .project-visual,.project-visual img{min-height:230px}
+ .stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .links a{display:none}
+ .pub .fig{border-right:0;border-bottom:1px solid var(--line)}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap"><nav aria-label="Main">
+  <a class="logo" href="#top">Nishan Chandika</a>
+  <div class="links">
+   <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a>
+   <button id="theme" aria-label="Toggle light and dark mode" title="Toggle theme"><span class="moon">🌙</span><span class="sun">☀️</span></button>
+  </div>
+ </nav></div>
+</header>
+
+<main id="top">
+<div class="wrap">
+ <div class="hero">
+  <div class="hero-backdrop" aria-hidden="true">
+   <img src="assets/hero/nishan-formal.jpeg" alt="">
+   <img src="assets/hero/nishan-event.jpeg" alt="">
+   <img src="assets/hero/nishan-outdoors.jpeg" alt="">
+  </div>
+  <div class="hero-content">
+   <h1>Nishan Chandika</h1>
+   <div class="role"><span id="typed">ServiceNow Certified System Administrator</span><span class="caret" aria-hidden="true"></span></div>
+   <p>I support reliable IT operations and build practical ServiceNow solutions, with experience across systems, networking, and automation.</p>
+   <div class="learning"><span aria-hidden="true">🚀</span><span><b>Currently learning:</b> the ServiceNow Developer path, with plans to sit the exam and earn the credential.</span></div>
+   <div class="btns">
+    <a class="btn primary" href="#contact">Get in touch</a>
+    <a class="btn" href="https://github.com/NishanChandika" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="#experience">Experience</a>
+   </div>
+  </div>
+  <div class="record" aria-label="Profile summary shown as a ServiceNow-style record">
+   <div class="rec-head"><span>Engineer record</span><span>Sri Lanka</span></div>
+   <dl>
+    <div class="row"><dt>Name</dt><dd>Nishan Chandika</dd></div>
+    <div class="row"><dt>Role</dt><dd>System Support Engineer, Mitra AI</dd></div>
+    <div class="row"><dt>Certified</dt><dd>ServiceNow CSA</dd></div>
+    <div class="row"><dt>Focus</dt><dd>Flow Designer, Service Catalog, SLAs, ACLs</dd></div>
+    <div class="row"><dt>Degree</dt><dd>BSc (Hons) IT, SLIIT</dd></div>
+    <div class="row"><dt>Learning</dt><dd>ServiceNow Developer</dd></div>
+    <div class="row"><dt>State</dt><dd><span class="state"><span class="dot"></span>Open to new opportunities</span></dd></div>
+   </dl>
+  </div>
+ </div>
+
+ <div class="stats rv">
+  <div class="stat"><b><span data-n="4">4</span>+</b><span>years in IT support and operations</span></div>
+  <div class="stat"><b>24/7</b><span>incident response experience</span></div>
+  <div class="stat"><b><span data-n="3">3</span> roles</b><span>promotions in 18 months at BetMakers</span></div>
+  <div class="stat"><b><span data-n="3">3</span> countries</b><span>teams across Sri Lanka, Australia and the US</span></div>
+ </div>
+
+ <div class="marquee" aria-label="Technologies I work with"><div class="track" id="track"></div></div>
+</div>
+
+<section id="about"><div class="wrap">
+ <div class="about-glass">
+  <h2 class="rv">About me</h2>
+  <div class="about">
+   <div class="photo rv" id="about-gallery">
+    <img id="about-image" src="assets/about/DSC04867.jpg" alt="Nishan Chandika at his SLIIT graduation, holding his diploma">
+   </div>
+   <p class="rv" style="--d:.1s">IT professional with a BSc (Hons) in Information Technology (Computer Systems &amp; Network Engineering) from SLIIT and hands-on experience across system support, IT operations, network administration and infrastructure management. Hands-on ServiceNow administrator and developer experienced in workflows, service catalogs, UI policies, business rules, SLAs and automated forms that replace legacy systems. Also experienced in 24/7 incident response, root cause analysis, Jira Service Management and Microsoft 365 / Azure AD environments. Proactive and results-driven, focused on delivering secure, stable and scalable IT environments that support business needs.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2 class="rv">Skills</h2>
+ <p class="lede rv">ServiceNow is my main platform, backed by a broad base in systems, networking and monitoring.</p>
+ <div class="skills">
+  <div class="group big rv"><h3>ServiceNow</h3><div class="chips">
+   <span>System Administration</span><span>Flow Designer</span><span>Workflow</span><span>Service Catalog</span><span>Record Producers</span><span>UI Policies</span><span>Client Scripts</span><span>Business Rules</span><span>Script Includes</span><span>SLA</span><span>Schedules</span><span>Notifications</span><span>ACLs</span><span>Update Sets</span><span>Import Sets</span><span>Process Automation</span></div></div>
+  <div class="group rv"><h3>ITSM and support</h3><div class="chips">
+   <span>Incident Management</span><span>Root Cause Analysis</span><span>Technical Support</span><span>Escalation Management</span><span>Jira Service Management</span><span>Jira Administration</span><span>ITIL</span></div></div>
+  <div class="group rv" style="--d:.1s"><h3>Systems and cloud</h3><div class="chips">
+   <span>Microsoft 365</span><span>Azure Active Directory</span><span>Active Directory</span><span>Windows Server 2016</span><span>Microsoft SCCM</span><span>Upgrades and migrations</span><span>Google Cloud Monitoring</span></div></div>
+  <div class="group rv networking"><h3>Networking and security</h3><div class="chips">
+   <span>Network troubleshooting</span><span>FortiGate Firewall</span><span>Cisco CUCM</span><span>BitLocker</span><span>McAfee Endpoint Security</span><span>Cybersecurity Essentials</span></div></div>
+  <div class="group rv" style="--d:.1s"><h3>Monitoring and tools</h3><div class="chips">
+   <span>Datadog</span><span>New Relic</span><span>Postman</span><span>Oracle Database</span><span>JavaScript</span><span>Trello</span><span>IT Asset Management</span><span>Technical Documentation</span></div></div>
+ </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <h2 class="rv">Experience</h2>
+ <p class="lede rv">From a laundry chain's IT desk to enterprise ServiceNow, newest role first.</p>
+ <div class="timeline">
+  <div class="job now rv">
+   <div class="jh"><img class="lg" data-local="mitra" data-logo="assets/logos/mitra.jpeg" data-domain="mitrai.com" data-ini="M" alt="Mitra Innovation logo"><div><div class="when">Oct 2025 – Present</div><h3>System Support Engineer</h3><div class="org">Mitra AI (Mitra Innovation)</div></div></div>
+   <ul>
+    <li>Administer and develop on ServiceNow: configuration, customisation and daily platform support.</li>
+    <li>Build Flow Designer and Workflow automations for approvals, fulfilment and routine operations.</li>
+    <li>Create Service Catalog items, record producers, variables and catalog client scripts.</li>
+    <li>Configure UI Policies, Client Scripts, Business Rules and Script Includes to control form behaviour.</li>
+    <li>Manage SLAs, schedules, notifications, ACLs, roles, update sets, import sets and transform maps.</li>
+    <li>Replace legacy systems with end-to-end automated forms and workflows, improving efficiency and visibility.</li>
+    <li>Join 24/7 incident response and root cause analysis; plan upgrades, migrations and integrations with minimal downtime.</li>
+   </ul>
+  </div>
+  <div class="job rv">
+   <div class="jh"><img class="lg" data-local="betmakers" data-logo="assets/logos/betmakers-user.jpeg" data-domain="betmakers.com" data-ini="B" alt="BetMakers logo"><div><div class="when">Apr 2024 to Oct 2025</div><h3>Operations Analyst, Global Support</h3><div class="org">Global Tote Lankan (BetMakers Technology), Colombo</div></div></div>
+   <div class="promo"><b>Promoted three times in 18 months:</b> Probation Associate Analyst (Apr 2024), Associate Operation Analyst (Oct 2024), Operations Analyst (Sep 2025).</div>
+   <ul>
+    <li>Triaged and prioritised customer cases using Postman, Datadog, New Relic, Google Cloud Monitoring and DeltaFusor.</li>
+    <li>Worked directly with development teams in Australia and escalated unresolved problems by procedure.</li>
+    <li>Researched discrepancies and took corrective action so customers got fast, accurate answers.</li>
+   </ul>
+  </div>
+  <div class="job rv">
+   <div class="jh"><img class="lg" data-local="wia" data-logo="assets/logos/wia-user.jpeg" data-domain="wiasystems.com" data-ini="W" alt="WIA Systems logo"><div><div class="when">Jul 2023 to Feb 2024</div><h3>Information Technology Administrator</h3><div class="org">WIA Systems Inc (IFS Partner), United States</div></div></div>
+   <ul>
+    <li>Ran day-to-day IT operations: networks, hardware, systems and application software.</li>
+    <li>Administered Jira, Microsoft 365, Azure AD and FortiGate firewall; supported users through a ticketing system.</li>
+    <li>Wrote technical documentation and kept the company asset inventory accurate.</li>
+   </ul>
+  </div>
+  <div class="job rv">
+   <div class="jh"><img class="lg" data-local="millenniumit" data-logo="assets/logos/millenniumit-user.png" data-domain="millenniumit.com" data-ini="M" alt="MillenniumIT ESP logo"><div><div class="when">Jan 2023 to Jun 2023</div><h3>Managed Services Intern</h3><div class="org">MillenniumIT ESP, Sri Lanka</div></div></div>
+   <ul>
+    <li>Worked with the NOC team on networks and administered Windows Server 2016 Active Directory.</li>
+    <li>Migrated and deployed Microsoft 365; configured machines with SCCM; managed McAfee and BitLocker.</li>
+    <li>Administered Cisco CUCM and worked with Azure, Oracle Database and the ServiceNow ticketing system.</li>
+   </ul>
+  </div>
+  <div class="job rv">
+   <div class="jh"><img class="lg" data-local="laundromat" data-logo="assets/logos/laundromat-user.jpeg" data-domain="thelaundromat.lk" data-ini="L" alt="The Laundromat logo"><div><div class="when">Jul 2022 to Dec 2022</div><h3>Information Technology Assistant</h3><div class="org">The Laundromat, Bambalapitiya</div></div></div>
+   <ul>
+    <li>Supported IT for 12 outlets and 2 plants: LAN, Windows server and database administration.</li>
+    <li>Installed hardware and software, did preventive maintenance and produced weekly sales reports.</li>
+   </ul>
+  </div>
+ </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2 class="rv">Education and certifications</h2>
+ <p class="lede rv">Formal training in networks and systems, plus credentials verified on Credly.</p>
+ <div class="cols">
+  <div class="card uni rv">
+   <div class="sl"><img src="assets/sliit-logo.png" alt="SLIIT, The Knowledge University"></div>
+   <div>
+    <h3>BSc (Hons) in Information Technology</h3>
+    <p class="sub">Computer Systems and Network Engineering</p>
+    <p class="sub">Sri Lanka Institute of Information Technology (SLIIT), Feb 2022 to Mar 2025</p>
+   </div>
+   <details class="coursework">
+    <summary><h4>Coursework and areas of study</h4><span class="sub">10 areas</span></summary>
+    <div class="course-grid">
+     <div class="course-group"><h5>Programming &amp; Software Development</h5><p>Introduction to Programming, Object-Oriented Programming, Software Engineering, Data Structures &amp; Algorithms</p></div>
+     <div class="course-group"><h5>Systems &amp; Operating Systems</h5><p>Operating Systems &amp; System Administration, Network Management &amp; Systems Administration</p></div>
+     <div class="course-group"><h5>Networking &amp; Infrastructure</h5><p>Data Communication Networks, Wireless Networks, Network Storage &amp; Architecture, Software Defined Networking</p></div>
+     <div class="course-group"><h5>DevOps &amp; Cloud Practices</h5><p>DevOps, system automation, deployment concepts, infrastructure management</p></div>
+     <div class="course-group"><h5>Cybersecurity &amp; Compliance</h5><p>Data &amp; Systems Security, Governance, Risk Management &amp; Compliance</p></div>
+     <div class="course-group"><h5>Databases &amp; Data</h5><p>Database Design &amp; Development, Probability &amp; Statistics</p></div>
+     <div class="course-group"><h5>AI &amp; Intelligent Systems</h5><p>Artificial Intelligence &amp; Machine Learning, Robotics &amp; Intelligent Systems</p></div>
+     <div class="course-group"><h5>Emerging Technologies</h5><p>Internet of Things (IoT), Software Defined Networks</p></div>
+     <div class="course-group"><h5>Research &amp; Professional Skills</h5><p>Research Project, Technical Writing, Professional Skills</p></div>
+     <div class="course-group"><h5>Computing Foundations</h5><p>Mathematics for Computing, Discrete Mathematics, Fundamentals of Computing</p></div>
+    </div>
+   </details>
+  </div>
+  <div class="card rv" style="--d:.1s">
+   <h3>Certifications</h3>
+   <p class="sub">Credly-verified credentials. Select a badge to view its verification.</p>
+   <div class="badges" id="badges"></div>
+   <div class="progress">
+    <b>In progress:</b> ServiceNow Developer certification
+    <div class="bar"><i></i></div>
+   </div>
+   <a class="credly" href="https://www.credly.com/users/nishan-chandika" target="_blank" rel="noopener">View all on Credly</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2 class="rv">Projects</h2>
+ <p class="lede rv">Selected work combining systems engineering, robotics and applied research.</p>
+ <div class="project-grid">
+  <article class="card project-card rv">
+   <div class="project-visual">
+    <img src="assets/research/sagittarius-prototype-1.jpg" alt="Physical prototype of the Sagittarius autonomous water quality monitoring vessel">
+    <span>Research project</span>
+   </div>
+   <div class="project-copy">
+    <h3>Sagittarius</h3>
+    <p>An AI-powered robotic system for autonomous water quality monitoring. The project developed a vessel platform from CAD design through to a physical prototype.</p>
+    <div class="project-tags"><span>Artificial intelligence</span><span>Robotics</span><span>Water quality</span><span>Prototyping</span></div>
+    <div class="btns"><a class="btn primary" href="https://ieeexplore.ieee.org/document/10851028" target="_blank" rel="noopener">Read the IEEE paper</a><a class="btn" href="https://github.com/NishanChandika/Sagittarius" target="_blank" rel="noopener">View on GitHub</a></div>
+   </div>
+  </article>
+ </div>
+ <div class="project-grid secondary">
+  <article class="card project-card rv">
+   <div class="project-visual art hamper" aria-hidden="true">
+    <span>ServiceNow scoped application</span>
+    <svg viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect x="47" y="42" width="326" height="180" rx="18" fill="#fff" fill-opacity=".91"/>
+     <rect x="47" y="42" width="326" height="38" rx="18" fill="#243e78"/>
+     <path d="M47 62h326v18H47z" fill="#243e78"/>
+     <circle cx="68" cy="61" r="4" fill="#f3bc78"/><circle cx="82" cy="61" r="4" fill="#fff" fill-opacity=".8"/><circle cx="96" cy="61" r="4" fill="#fff" fill-opacity=".55"/>
+     <rect x="68" y="101" width="104" height="91" rx="12" fill="#f5e8d5"/>
+     <path d="M88 132h64v42H88z" fill="#c8844d"/><path d="M82 126h76l-7-16H89z" fill="#e3ad70"/><path d="M114 126v48m0-48c-22-3-16-22-4-19 9 2 4 19 4 19zm0 0c22-3 16-22 4-19-9 2-4 19-4 19z" stroke="#738653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+     <rect x="192" y="105" width="151" height="12" rx="6" fill="#dce3ef"/>
+     <rect x="192" y="129" width="125" height="8" rx="4" fill="#e8ebf0"/>
+     <rect x="192" y="147" width="137" height="8" rx="4" fill="#e8ebf0"/>
+     <rect x="192" y="169" width="70" height="20" rx="10" fill="#e3f2e9"/><circle cx="204" cy="179" r="4" fill="#38805a"/><rect x="214" y="175" width="39" height="8" rx="4" fill="#8eaf9b"/>
+    </svg>
+   </div>
+   <div class="project-copy">
+    <h3>December Gift Hamper Tracker</h3>
+    <p>A ServiceNow scoped app for collecting employee gift preferences and tracking each hamper from request through delivery. Conditional UI policies adapt the form to employee selections.</p>
+    <div class="project-tags"><span>ServiceNow Studio</span><span>Scoped application</span><span>UI policies</span><span>Git version control</span></div>
+    <a class="btn primary" href="https://github.com/NishanChandika/December-Gift-Hamper" target="_blank" rel="noopener">View on GitHub</a>
+   </div>
+  </article>
+  <article class="card project-card rv" style="--d:.1s">
+   <div class="project-visual art parking" aria-hidden="true">
+    <span>Parking reservation system</span>
+    <svg viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect x="54" y="43" width="312" height="178" rx="18" fill="#fff" fill-opacity=".93"/>
+     <rect x="54" y="43" width="312" height="35" rx="18" fill="#183b35"/>
+     <path d="M54 61h312v17H54z" fill="#183b35"/>
+     <circle cx="74" cy="60" r="4" fill="#78bfa7"/><rect x="177" y="56" width="86" height="8" rx="4" fill="#fff" fill-opacity=".7"/>
+     <rect x="72" y="96" width="151" height="105" rx="10" fill="#e7f0ed"/>
+     <path d="M82 110h131M82 139h131M82 168h131M110 101v96m39-96v96m39-96v96" stroke="#c1d8d0" stroke-width="3"/>
+     <path d="M91 117h17v18H91zm39 29h18v18h-18zm40-29h22v18h-22zm-77 58h24v15H93zm86-29h19v17h-19z" fill="#71aa96"/>
+     <path d="M157 118v24" stroke="#285f50" stroke-width="3"/><circle cx="157" cy="112" r="10" fill="#f1a54f" stroke="#fff" stroke-width="4"/>
+     <rect x="241" y="96" width="106" height="105" rx="10" fill="#f7f9f8"/>
+     <rect x="255" y="110" width="77" height="8" rx="4" fill="#bacbc5"/>
+     <rect x="255" y="129" width="77" height="23" rx="6" fill="#fff" stroke="#d6e1dd"/>
+     <rect x="255" y="159" width="77" height="23" rx="6" fill="#fff" stroke="#d6e1dd"/>
+     <rect x="255" y="187" width="77" height="8" rx="4" fill="#26806a"/>
+    </svg>
+   </div>
+   <div class="project-copy">
+    <h3>ParkEase</h3>
+    <p>A web-based parking reservation system to find available spots, book dates and times, and pay online. Includes location services and an admin panel for managing parking spaces and reservations.</p>
+    <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Stripe</span><span>Google Maps</span></div>
+    <a class="btn primary" href="https://github.com/NishanChandika/ParkEase" target="_blank" rel="noopener">View on GitHub</a>
+   </div>
+  </article>
+ </div>
+</div></section>
+
+<section id="research"><div class="wrap">
+ <h2 class="rv">Research and publications</h2>
+ <p class="lede rv">Published at an IEEE conference in Colombo.</p>
+ <div class="card pub rv">
+  <div class="fig" id="vessel-gallery" role="region" aria-label="Sagittarius vessel image gallery" aria-roledescription="carousel">
+   <img id="vessel-image" src="assets/research/sagittarius-cad-perspective.jpg" alt="CAD perspective view of the Sagittarius autonomous water quality monitoring vessel">
+   <button class="gallery-control prev" type="button" aria-label="Show previous vessel image">‹</button>
+   <button class="gallery-control next" type="button" aria-label="Show next vessel image">›</button>
+   <div class="gallery-caption" aria-live="polite"><span id="vessel-caption">CAD perspective view</span><span id="vessel-count"> · 1 of 7</span></div>
+   <div class="gallery-dots" aria-label="Choose a vessel image"></div>
+  </div>
+  <div class="txt">
+   <div class="venue">IEEE conference paper</div>
+   <h3>Autonomous Water Quality Monitoring Using AI-Powered Robotic System (Sagittarius)</h3>
+   <dl class="meta">
+    <div><dt>Published in</dt><dd><a href="https://ieeexplore.ieee.org/xpl/conhome/10850900/proceeding" target="_blank" rel="noopener">2024 6th International Conference on Advancements in Computing (ICAC)</a></dd></div>
+    <div><dt>Conference</dt><dd>12-13 December 2024, Colombo, Sri Lanka</dd></div>
+    <div><dt>On IEEE Xplore</dt><dd>27 January 2025</dd></div>
+    <div><dt>Publisher</dt><dd>IEEE</dd></div>
+    <div><dt>DOI</dt><dd><a href="https://doi.org/10.1109/ICAC64487.2024.10851028" target="_blank" rel="noopener">10.1109/ICAC64487.2024.10851028</a></dd></div>
+   </dl>
+   <a class="btn primary" style="margin-top:20px" href="https://ieeexplore.ieee.org/document/10851028" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+ <div class="cbox rv">
+  <h2>Let's work together</h2>
+  <p>Looking for someone to build ServiceNow automations or keep your systems running? Send me a message.</p>
+  <div class="clinks">
+   <a href="mailto:nishanchandika27@gmail.com"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span class="contact-text"><small>Email</small>nishanchandika27@gmail.com</span></a>
+   <a href="tel:+94768837380"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h3l2 5-2.5 1.5a14 14 0 0 0 5 5L16 12l5 2v3c0 2-2 4-4 4A16 16 0 0 1 3 5c0-1 2-2 4-2Z"/></svg></span><span class="contact-text"><small>Phone</small>+94 76 883 7380</span></a>
+   <a href="https://linkedin.com/in/nishanchandika" target="_blank" rel="noopener"><span class="contact-icon wordmark" aria-hidden="true">in</span><span class="contact-text"><small>LinkedIn</small>linkedin.com/in/nishanchandika</span></a>
+   <a href="https://github.com/NishanChandika" target="_blank" rel="noopener"><span class="contact-icon wordmark" aria-hidden="true">GH</span><span class="contact-text"><small>GitHub</small>github.com/NishanChandika</span></a>
+   <a href="https://medium.com/@nishanchandika27" target="_blank" rel="noopener"><span class="contact-icon wordmark" aria-hidden="true">M</span><span class="contact-text"><small>Medium</small>medium.com/@nishanchandika27</span></a>
+   <a href="https://www.credly.com/users/nishan-chandika" target="_blank" rel="noopener"><span class="contact-icon wordmark" aria-hidden="true">C</span><span class="contact-text"><small>Credly</small>credly.com/users/nishan-chandika</span></a>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Nishan Chandika. Panadura, Western Province, Sri Lanka.</div></footer>
+
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s){return [].slice.call(document.querySelectorAll(s))};
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+$('#yr').textContent=new Date().getFullYear();
+$('#theme').addEventListener('click',function(){var n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('theme',n)}catch(e){}});
+
+/* ---- About photo rotation ---- */
+var aboutPhotos=[
+ {src:'assets/about/DSC04867.jpg',alt:'Nishan Chandika at his SLIIT graduation, holding his diploma'},
+ {src:'assets/about/DSC04874.jpg',alt:'Nishan Chandika posing in his graduation gown at SLIIT'},
+ {src:'assets/about/DSC04951.jpg',alt:'Nishan Chandika celebrating graduation with flowers and a SLIIT teddy bear'},
+ {src:'assets/about/DSC04982.jpg',alt:'Nishan Chandika celebrating his graduation outdoors'}
+];
+var aboutGallery=$('#about-gallery'),aboutImage=$('#about-image'),aboutIndex=0;
+function showAboutPhoto(index){
+ aboutIndex=(index+aboutPhotos.length)%aboutPhotos.length;
+ var photo=aboutPhotos[aboutIndex];
+ aboutImage.classList.add('changing');
+ aboutImage.onload=function(){aboutImage.classList.remove('changing')};
+ aboutImage.onerror=function(){aboutImage.classList.remove('changing');console.error('Unable to load About photo: '+photo.src)};
+ aboutImage.src=photo.src;aboutImage.alt=photo.alt;
+}
+if(!reduce)setInterval(function(){if(!aboutGallery.matches(':hover')&&!document.hidden)showAboutPhoto(aboutIndex+1)},5000);
+
+/* ---- research vessel image gallery ---- */
+var vesselSlides=[
+ {src:'assets/research/sagittarius-cad-perspective.jpg',alt:'CAD perspective view of the Sagittarius autonomous water quality monitoring vessel',caption:'CAD perspective view'},
+ {src:'assets/research/sagittarius-front-view.jpg',alt:'Front view CAD drawing of the Sagittarius vessel',caption:'Front view'},
+ {src:'assets/research/sagittarius-section-view.jpg',alt:'Section view CAD drawing of the Sagittarius vessel hull and components',caption:'Hull section view'},
+ {src:'assets/research/sagittarius-top-view.jpg',alt:'Top view CAD rendering of the Sagittarius vessel and frame',caption:'Top view'},
+ {src:'assets/research/sagittarius-underbody-view.jpg',alt:'Underside CAD rendering of the Sagittarius vessel and support frame',caption:'Underside view'},
+ {src:'assets/research/sagittarius-prototype-1.jpg',alt:'Photograph of the Sagittarius prototype on a workbench',caption:'Physical prototype'},
+ {src:'assets/research/sagittarius-prototype-2.jpg',alt:'Front-facing photograph of the Sagittarius prototype on a workbench',caption:'Prototype front view'}
+];
+var gallery=$('#vessel-gallery'),vesselImage=$('#vessel-image'),vesselCaption=$('#vessel-caption'),vesselCount=$('#vessel-count'),galleryDots=$('.gallery-dots',gallery),slideIndex=0;
+function showVesselSlide(index){
+ slideIndex=(index+vesselSlides.length)%vesselSlides.length;
+ var slide=vesselSlides[slideIndex];
+ vesselImage.classList.add('changing');
+ vesselImage.onload=function(){vesselImage.classList.remove('changing')};
+ vesselImage.onerror=function(){vesselImage.classList.remove('changing');console.error('Unable to load research vessel image: '+slide.src)};
+ vesselImage.src=slide.src;vesselImage.alt=slide.alt;
+ vesselCaption.textContent=slide.caption;vesselCount.textContent=' · '+(slideIndex+1)+' of '+vesselSlides.length;
+ $$('.gallery-dot',gallery).forEach(function(dot,i){dot.setAttribute('aria-pressed',i===slideIndex?'true':'false')});
+}
+vesselSlides.forEach(function(slide,i){
+ var dot=document.createElement('button');dot.type='button';dot.className='gallery-dot';dot.setAttribute('aria-label','Show '+slide.caption.toLowerCase());dot.setAttribute('aria-pressed',i===0?'true':'false');
+ dot.addEventListener('click',function(){showVesselSlide(i)});galleryDots.appendChild(dot);
+});
+$('.gallery-control.prev',gallery).addEventListener('click',function(){showVesselSlide(slideIndex-1)});
+$('.gallery-control.next',gallery).addEventListener('click',function(){showVesselSlide(slideIndex+1)});
+if(!reduce)setInterval(function(){if(!gallery.matches(':hover')&&!gallery.contains(document.activeElement)&&!document.hidden)showVesselSlide(slideIndex+1)},5000);
+
+/* ---- technology logos (Simple Icons / Devicon CDNs, monogram fallback) ---- */
+var TECH=[["ServiceNow","local:servicenow"],["Jira","si:jira"],["JavaScript","si:javascript"],["Postman","si:postman"],["Datadog","si:datadog"],["New Relic","si:newrelic"],["Google Cloud","si:googlecloud"],["Azure","dv:azure/azure-original"],["Oracle","local:oracle"],["FortiGate","si:fortinet"],["Cisco","si:cisco"],["McAfee","si:mcafee"],["Microsoft 365","local:microsoft365"],["Windows Server","dv:windows8/windows8-original"],["Trello","si:trello"],["GitHub","si:github"]];
+function techSrc(c){var p=c.split(':');if(p[0]==='local')return 'assets/logos/'+p[1]+'.svg';return p[0]==='si'?'https://cdn.simpleicons.org/'+p[1]:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/'+p[1]+'.svg'}
+function mono(txt,cls){var i=document.createElement('i');i.className='mono '+(cls||'');i.textContent=txt;return i}
+var html='';
+for(var k=0;k<2;k++)TECH.forEach(function(t){html+='<div class="tech" '+(k?'aria-hidden="true"':'')+'><img src="'+techSrc(t[1])+'" alt="" loading="lazy" data-ini="'+t[0][0]+'"><span>'+t[0]+'</span></div>'});
+$('#track').innerHTML=html;
+
+/* ---- image fallbacks: tech icons, company logos ---- */
+function fallbackMono(img){var m=mono(img.dataset.ini||'?',img.classList.contains('lg')?'lg':'');if(img.classList.contains('lg')){m.style.cssText='width:52px;height:52px;border-radius:12px;flex:none;font-size:20px'}img.replaceWith(m)}
+$$('.tech img').forEach(function(i){i.onerror=function(){fallbackMono(i)}});
+$$('img.lg').forEach(function(i){
+ var step=0;i.onerror=function(){step++;if(step===1){i.src='assets/logos/'+i.dataset.local+'.png';return}if(step===2){i.src='https://www.google.com/s2/favicons?domain='+i.dataset.domain+'&sz=128';return}fallbackMono(i)};
+ i.src=i.dataset.logo||'assets/logos/'+i.dataset.local+'.svg';
+});
+
+/* ---- skill chip icons ---- */
+var SKILL_ICON_NAMES={
+ 'System Administration':'settings','Flow Designer':'workflow','Workflow':'workflow','Service Catalog':'catalog','Record Producers':'file','UI Policies':'sliders','Client Scripts':'code','Business Rules':'shield','Script Includes':'code','SLA':'clock','Schedules':'calendar','Notifications':'bell','ACLs':'lock','Update Sets':'layers','Import Sets':'upload','Process Automation':'zap',
+ 'Incident Management':'alert','Root Cause Analysis':'search','Technical Support':'headset','Escalation Management':'trend','Jira Service Management':'ticket','Jira Administration':'settings','ITIL':'book',
+ 'Microsoft 365':'apps','Azure Active Directory':'cloud','Active Directory':'users','Windows Server 2016':'server','Microsoft SCCM':'desktop','Upgrades and migrations':'arrows','Google Cloud Monitoring':'chart',
+ 'Network troubleshooting':'network','FortiGate Firewall':'firewall','Cisco CUCM':'phone','BitLocker':'lock','McAfee Endpoint Security':'shield','Cybersecurity Essentials':'shieldCheck',
+ 'Datadog':'chart','New Relic':'pulse','Postman':'send','Oracle Database':'database','JavaScript':'code','Trello':'kanban','IT Asset Management':'box','Technical Documentation':'file'
+};
+var SKILL_ICONS={
+ settings:'<circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.6.9l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.6-.9l-1.7.7-1.4-2.4 1.4-1.1a7 7 0 0 1 0-1.9l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.6-.9l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.6.9l1.7-.7 1.4 2.4-1.4 1.1a7 7 0 0 1 0 1.9Z"/>',
+ workflow:'<rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h4a3 3 0 0 1 3 3v4M7 10v5h7"/>',
+ catalog:'<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 1 4 16.5z"/><path d="M4 16a2.5 2.5 0 0 1 2.5-2.5H20M8 7h8M8 10h6"/>',
+ file:'<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10z"/><path d="M13 3v7h7M8 14h8M8 17h8"/>',
+ sliders:'<path d="M4 6h9m4 0h3M4 12h3m4 0h9M4 18h9m4 0h3"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="18" r="2"/>',
+ code:'<path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14"/>',
+ shield:'<path d="M12 3 20 6v5c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6z"/><path d="M9 12h6"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2m4 0h2m-8 3h2"/>',
+ bell:'<path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/>',
+ lock:'<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 4v3"/>',
+ layers:'<path d="m12 3 9 5-9 5-9-5zM3 12l9 5 9-5M3 16l9 5 9-5"/>',
+ upload:'<path d="M12 16V4m-5 5 5-5 5 5M4 16v4h16v-4"/>',
+ zap:'<path d="m13 2-3 9h7L9 22l3-9H5z"/>',
+ alert:'<path d="M12 3 2.8 19h18.4z"/><path d="M12 9v4m0 3h.01"/>',
+ search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5m-14-10 2 2 4-4"/>',
+ headset:'<path d="M3 13v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="12" width="5" height="8" rx="2"/><rect x="16" y="12" width="5" height="8" rx="2"/><path d="M16 20h-3"/>',
+ trend:'<path d="m4 17 6-6 4 3 6-8m-6 0h6v6"/>',
+ ticket:'<path d="M4 5h16v4a3 3 0 0 0 0 6v4H4v-4a3 3 0 0 0 0-6z"/><path d="M13 8v2m0 4v2"/>',
+ book:'<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 1 4 17.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20M8 6h8m-8 3h8"/>',
+ apps:'<rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/>',
+ cloud:'<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z"/>',
+ users:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1zm13-9a3 3 0 1 0-1-5.8M18 14a5 5 0 0 1 3 5v1"/>',
+ server:'<rect x="3" y="3" width="18" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/><path d="M7 7h.01M7 17h.01M11 7h7m-7 10h7"/>',
+ desktop:'<rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8m-4-4v4M7 7h10v6H7z"/>',
+ arrows:'<path d="M7 7h13l-3-3m3 3-3 3M17 17H4l3 3m-3-3 3-3"/>',
+ chart:'<path d="M4 19V5m0 14h17"/><path d="m7 15 4-5 3 3 6-7"/>',
+ network:'<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="m10.8 7.2-4.5 8.5m6.9-8.5 4.5 8.5M7.5 18h9"/>',
+ firewall:'<path d="M12 3 20 6v5c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6z"/><path d="M6 10h4v3H6zm8 0h4v3h-4zm-4 3h4v3h-4z"/>',
+ phone:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h.01M11 9h.01M15 9h.01M19 9h.01M7 15h.01M11 15h.01M15 15h.01M19 15h.01M8 12h8"/>',
+ shieldCheck:'<path d="M12 3 20 6v5c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6z"/><path d="m8.5 12 2.3 2.3 4.8-4.8"/>',
+ pulse:'<path d="M3 12h4l3-8 4 16 3-8h4"/>',
+ send:'<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>',
+ database:'<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14a8 3 0 0 0 16 0V5M4 12a8 3 0 0 0 16 0"/>',
+ kanban:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16m6-16v16M5.5 7h1m5 0h1m5 0h1"/>',
+ box:'<path d="m12 3 9 5v8l-9 5-9-5V8z"/><path d="m3 8 9 5 9-5m-9 5v8m-4-15 9 5"/>'
+};
+$$('.chips span').forEach(function(chip){
+ var iconName=SKILL_ICON_NAMES[chip.textContent.trim()];
+ if(!iconName||!SKILL_ICONS[iconName]){console.error('No skill icon configured for: '+chip.textContent.trim());return}
+ var icon=document.createElement('i'),svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+ icon.className='skill-icon';icon.setAttribute('aria-hidden','true');
+ svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','1.8');svg.setAttribute('stroke-linecap','round');svg.setAttribute('stroke-linejoin','round');svg.innerHTML=SKILL_ICONS[iconName];
+ icon.appendChild(svg);chip.insertBefore(icon,chip.firstChild);
+});
+
+/* ---- Verified Credly badges ---- */
+var BADGES=[
+ {name:'ServiceNow Certified System Administrator (CSA)',short:'CSA',by:'ServiceNow',issued:'Issued Jul 11, 2026',img:'assets/badges/servicenow-csa.png',url:'https://www.credly.com/badges/2703d76b-c151-48ca-8a43-130de5533d6d',c:'#62d84e'},
+ {name:'Fortinet FortiGate 7.4 Operator',short:'FG',by:'Fortinet',issued:'Issued Dec 20, 2023',img:'assets/badges/fortinet-fortigate-74-operator.png',url:'https://www.credly.com/badges/e7c3a2fc-fe55-4e00-a7ea-55cb18962728',c:'#ee3124'},
+ {name:'Cybersecurity Essentials',short:'CYB',by:'Cisco',issued:'Issued Oct 2, 2023',img:'assets/badges/cybersecurity-essentials.png',url:'https://www.credly.com/badges/42cb89a4-75ca-45aa-95c9-4b52a93cfade',c:'#049fd9'},
+ {name:'Networking Essentials',short:'NET',by:'Cisco',issued:'Issued Jun 29, 2022',img:'assets/badges/networking-essentials.png',url:'https://www.credly.com/badges/6dc08341-f43e-4c0e-a691-f61de5de56fa',c:'#049fd9'},
+ {name:'Introduction to the Threat Landscape 2.0',short:'TL 2.0',by:'Fortinet',issued:'Issued Oct 17, 2023',img:'assets/badges/fortinet-threat-landscape-20.png',url:'https://www.credly.com/badges/5e1d05a2-e53f-44e6-9684-0b6c7582113e',c:'#ee3124'},
+ {name:'Introduction to Cybersecurity',short:'CYBER',by:'Cisco',issued:'Issued Apr 21, 2021',img:'assets/badges/introduction-to-cybersecurity.png',url:'https://www.credly.com/badges/b8b399b3-7c47-4296-a875-4c4bec968129',c:'#049fd9'},
+ {name:'Introduction to the Threat Landscape 1.0',short:'TL 1.0',by:'Fortinet',issued:'Issued Mar 10, 2023',img:'assets/badges/fortinet-threat-landscape-10.png',url:'https://www.credly.com/badges/9c44a982-83b8-4a54-ab0e-acb57f3ca327',c:'#ee3124'},
+ {name:'Fortinet Certified Associate Cybersecurity',short:'FCA',by:'Fortinet',issued:'Expired Dec 20, 2025',expired:true,img:'assets/badges/fortinet-associate-cybersecurity.png',url:'https://www.credly.com/badges/3f626a00-8e2a-462d-b6d6-ee93524a6904',c:'#ee3124'}
+];
+var bh='';BADGES.forEach(function(b,i){bh+='<a class="badge" href="'+b.url+'" target="_blank" rel="noopener" aria-label="'+b.name+(b.expired?' (expired)':'')+' on Credly"><span class="bi"><img src="'+b.img+'" alt="" data-i="'+i+'"></span><span>'+b.name+'<small>'+b.by+'</small><small'+(b.expired?' class="expired"':'')+'>'+b.issued+'</small></span></a>'});
+$('#badges').innerHTML=bh;
+$$('#badges img').forEach(function(img){img.onerror=function(){var b=BADGES[img.dataset.i];
+ var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 100 100');
+ s.innerHTML='<polygon points="50,4 91,27 91,73 50,96 9,73 9,27" fill="'+b.c+'"/><polygon points="50,12 84,31 84,69 50,88 16,69 16,31" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><text x="50" y="56" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="22" fill="#fff">'+b.short+'</text>';
+ img.replaceWith(s)}});
+
+/* ---- animations: typed role, reveal, counters ---- */
+if(!reduce){
+ var roles=['ServiceNow Certified System Administrator','Flow Designer and workflow builder','24/7 incident responder','Systems and network engineer'],r=0,c=0,del=false,el=$('#typed');
+ (function tick(){var w=roles[r];c+=del?-1:1;el.textContent=w.slice(0,c);var d=del?28:55;
+  if(!del&&c===w.length){del=true;d=1800}else if(del&&c===0){del=false;r=(r+1)%roles.length;d=350}setTimeout(tick,d)})();
+}
+$$('.chips').forEach(function(g){[].forEach.call(g.children,function(s,i){s.style.setProperty('--i',i)})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);
+ $$('[data-n]',e.target).length||0;[].forEach.call(e.target.querySelectorAll('[data-n]'),function(n){var to=+n.dataset.n;if(reduce){n.textContent=to;return}var t0=null;(function f(t){t0=t0||t;var p=Math.min((t-t0)/1200,1);n.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(f)})(performance.now())})
+})},{threshold:.15});
+$$('.rv').forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
