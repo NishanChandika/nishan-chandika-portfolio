@@ -19,3 +19,7 @@ Then open `http://localhost:8000`.
 
 ## Deploy to Vercel
 Import this repository at [Vercel](https://vercel.com/new); no build settings are needed. The static site can also be hosted with GitHub Pages.
+
+## Search indexing
+
+The site publishes `robots.txt` and `sitemap.xml` at the domain root. To request search indexing, verify the domain in [Google Search Console](https://search.google.com/search-console/), submit `https://nishan-chandika-portfolio.vercel.app/sitemap.xml`, and request indexing for the homepage. Search engines determine when and where pages appear; metadata and sitemap submission cannot guarantee rankings or inclusion.
