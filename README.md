@@ -16,6 +16,7 @@ Then open `http://localhost:8000`.
 - Credly badge images: save into `assets/badges/` (file names are in the `BADGES` list near the bottom of `index.html`) and paste each badge's Credly URL there.
 - Company logos are stored in `assets/logos/`.
 - Hero and About photos are stored in `assets/hero/` and `assets/about/`.
+- The downloadable CV is stored in `assets/cv/`.
 
 ## Deploy to Vercel
 Import this repository at [Vercel](https://vercel.com/new); no build settings are needed. The static site can also be hosted with GitHub Pages.
